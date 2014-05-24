@@ -4,6 +4,8 @@ require_once 'mirror/mirror-client.php';
 require_once 'mirror/google-api-php-client/src/Google_Client.php';
 require_once 'mirror/google-api-php-client/src/contrib/Google_MirrorService.php';
 require_once 'mirror/util.php';
+
+$client = get_google_api_client();
 ?>
 <!doctype html>
 <html lang="en">
