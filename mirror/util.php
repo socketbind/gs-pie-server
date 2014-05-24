@@ -101,5 +101,10 @@ function bootstrap_pie() {
     $timeline_item = new Google_TimelineItem();
     $timeline_item->setText("Hello! You will be cooking in no time!");
 
+    $deleteMenuItem = new Google_MenuItem();
+    $deleteMenuItem->setAction("DELETE");
+    $timeline_item->setMenuItems(array($deleteMenuItem));
+
+
     insert_timeline_item($mirror_service, $timeline_item, null, null);
 }

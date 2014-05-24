@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05d09124-fd15-4967-a3c0-af8454597bb6" name="Default" comment="revert sqlite changes, add sqlite3 ext">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mirror/send_pie.php" afterPath="$PROJECT_DIR$/mirror/send_pie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mirror/util.php" afterPath="$PROJECT_DIR$/mirror/util.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pie-heroku.iws" />
@@ -107,21 +107,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="util.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="util.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mirror/util.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.458334" vertical-offset="628" max-vertical-offset="1455">
-              <caret line="87" column="59" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="59" />
-              <folding />
+            <state vertical-scroll-proportion="0.7881356" vertical-offset="1086" max-vertical-offset="1530">
+              <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
+              <folding>
+                <marker date="1400933560240" expanded="true" signature="1296:1347" placeholder="select * fro..credentials..." />
+                <marker date="1400933560240" expanded="true" signature="1562:1605" placeholder="select useri..credentials..." />
+                <marker date="1400933560240" expanded="true" signature="1915:1976" placeholder="select count..sqlite_master..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send_pie.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="send_pie.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mirror/send_pie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7457627" vertical-offset="201" max-vertical-offset="555">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.875" vertical-offset="201" max-vertical-offset="555">
+              <caret line="26" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="e#6#95#0" expanded="true" />
               </folding>
@@ -132,8 +136,8 @@
       <file leaf-file-name="Google_MirrorService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mirror/google-api-php-client/src/contrib/Google_MirrorService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5833333" vertical-offset="7154" max-vertical-offset="17955">
-              <caret line="488" column="6" selection-start-line="488" selection-start-column="6" selection-end-line="488" selection-end-column="6" />
+            <state vertical-scroll-proportion="-4.7083335" vertical-offset="16057" max-vertical-offset="17955">
+              <caret line="1090" column="18" selection-start-line="1090" selection-start-column="18" selection-end-line="1090" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -167,10 +171,10 @@
         <option value="$PROJECT_DIR$/mirror/perform_auth.php" />
         <option value="$PROJECT_DIR$/mirror/mirror-client.php" />
         <option value="$PROJECT_DIR$/mirror/perform_logout.php" />
-        <option value="$PROJECT_DIR$/mirror/util.php" />
         <option value="$PROJECT_DIR$/mirror/oauth2callback.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/mirror/send_pie.php" />
+        <option value="$PROJECT_DIR$/mirror/util.php" />
       </list>
     </option>
   </component>
@@ -609,7 +613,7 @@
       <created>1400921997627</created>
       <updated>1400921997627</updated>
       <workItem from="1400921999702" duration="1183000" />
-      <workItem from="1400923184162" duration="6315000" />
+      <workItem from="1400923184162" duration="6561000" />
     </task>
     <task id="LOCAL-00001" summary="updated config heroku">
       <created>1400923392744</created>
@@ -627,7 +631,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7498000" />
+    <option name="totallyTimeSpent" value="7744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="-4" width="1317" height="772" extended-state="6" />
@@ -808,26 +812,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mirror/google-api-php-client/src/contrib/Google_MirrorService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5833333" vertical-offset="7154" max-vertical-offset="17955">
-          <caret line="488" column="6" selection-start-line="488" selection-start-column="6" selection-end-line="488" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mirror/perform_auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="345">
           <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mirror/util.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.458334" vertical-offset="628" max-vertical-offset="1455">
-          <caret line="87" column="59" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -864,12 +852,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mirror/google-api-php-client/src/contrib/Google_MirrorService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.7083335" vertical-offset="16057" max-vertical-offset="17955">
+          <caret line="1090" column="18" selection-start-line="1090" selection-start-column="18" selection-end-line="1090" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mirror/send_pie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7457627" vertical-offset="201" max-vertical-offset="555">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.875" vertical-offset="201" max-vertical-offset="555">
+          <caret line="26" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#6#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mirror/util.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7881356" vertical-offset="1086" max-vertical-offset="1530">
+          <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
+          <folding>
+            <marker date="1400933560240" expanded="true" signature="1296:1347" placeholder="select * fro..credentials..." />
+            <marker date="1400933560240" expanded="true" signature="1562:1605" placeholder="select useri..credentials..." />
+            <marker date="1400933560240" expanded="true" signature="1915:1976" placeholder="select count..sqlite_master..." />
           </folding>
         </state>
       </provider>

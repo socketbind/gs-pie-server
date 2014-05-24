@@ -19,11 +19,11 @@ $client->setAccessToken(get_credentials($_SESSION['userid']));
 $mirror_service = new Google_MirrorService($client);
 
 $timeline_item = new Google_TimelineItem();
-$timeline_item->setText("Apple Pie");
+$timeline_item->setText("Apple Pie !");
 
-$notification = new Google_NotificationConfig();
-$notification->setLevel("DEFAULT");
-$timeline_item->setNotification($notification);
+$deleteMenuItem = new Google_MenuItem();
+$deleteMenuItem->setAction("DELETE");
+$timeline_item->setMenuItems(array($deleteMenuItem));
 
 insert_timeline_item($mirror_service, $timeline_item, "image/jpeg", file_get_contents('./static/images/pie.jpg'));
 
