@@ -22,7 +22,7 @@ $api_client_id = "917904597916-qhhj1cev0s6596toai9psf1k5r1hfk8n.apps.googleuserc
 $api_client_secret = "c48MJSFWbjYAcnLbtkTvFYlm";
 $api_simple_key = "API_KEY";
 
-$base_url = "http://localhost:8000/mirror";
+$base_url = "http://gh-pie.herokuapp.com/mirror";
 
 // This should be writable by your web server's user
 $sqlite_database = "/tmp/database.sqlite";
