@@ -19,8 +19,8 @@ $client = get_google_api_client();
 
 <?php if (!isset($_SESSION['userid'])): ?>
     <a href="/mirror/perform_auth.php">Login</a><br/>
-    <a href="/mirror/send_pie.php">Send pie</a>
 <?php else: ?>
+    <a href="/mirror/send_pie.php">Send pie</a>
     <a href="/mirror/perform_logout.php">Log out</a>
 <?php endif; ?>
 

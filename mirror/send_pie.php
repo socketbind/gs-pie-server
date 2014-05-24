@@ -21,12 +21,11 @@ $mirror_service = new Google_MirrorService($client);
 $timeline_item = new Google_TimelineItem();
 $timeline_item->setText("Apple Pie");
 
-$pie_picture = new Google_Attachment();
-$pie_picture->setContentType("image/jpeg");
-$pie_picture->setContentUrl($base_url . "/static/images/pie.jpg");
-$timeline_item->setAttachments(array($pie_picture));
+$notification = new Google_NotificationConfig();
+$notification->setLevel("DEFAULT");
+$timeline_item->setNotification($notification);
 
-insert_timeline_item($mirror_service, $timeline_item, null, null);
+insert_timeline_item($mirror_service, $timeline_item, "image/jpeg", file_get_contents('./static/images/pie.jpg'));
 
 header('Location: ' . $user_url);
 
