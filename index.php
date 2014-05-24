@@ -1,3 +1,10 @@
+<?php
+require_once 'mirror/config.php';
+require_once 'mirror/mirror-client.php';
+require_once 'mirror/google-api-php-client/src/Google_Client.php';
+require_once 'mirror/google-api-php-client/src/contrib/Google_MirrorService.php';
+require_once 'mirror/util.php';
+?>
 <!doctype html>
 <html lang="en">
 <head>
