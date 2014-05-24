@@ -10,6 +10,7 @@ require_once 'config.php';
 require_once 'mirror-client.php';
 require_once 'google-api-php-client/src/Google_Client.php';
 require_once 'google-api-php-client/src/contrib/Google_MirrorService.php';
+require_once 'util.php';
 
 $client = get_google_api_client();
 $client->setAccessToken(get_credentials($_SESSION['userid']));
@@ -26,3 +27,6 @@ $pie_picture->setContentUrl($base_url . "/static/images/pie.jpg");
 $timeline_item->setAttachments(array($pie_picture));
 
 insert_timeline_item($mirror_service, $timeline_item, null, null);
+
+header('Location: ' . $user_url);
+
