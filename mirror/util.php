@@ -90,3 +90,16 @@ function bootstrap_new_user() {
   subscribe_to_notifications($mirror_service, "timeline",
     $_SESSION['userid'], $base_url . "/notify.php");
 }
+
+function bootstrap_pie() {
+    $client = get_google_api_client();
+    $client->setAccessToken(get_credentials($_SESSION['userid']));
+
+    // A glass service for interacting with the Mirror API
+    $mirror_service = new Google_MirrorService($client);
+
+    $timeline_item = new Google_TimelineItem();
+    $timeline_item->setText("Hello! You will be cooking in no time!");
+
+    insert_timeline_item($mirror_service, $timeline_item, null, null);
+}

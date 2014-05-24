@@ -44,9 +44,7 @@ if (isset($_GET['code'])) {
   $_SESSION['useremail'] = $user_email;
   store_credentials($user_id, $client->getAccessToken());
 
-  // Bootstrap the new user by inserting a welcome message, a contact,
-  // and subscribing them to timeline notifications
-  //bootstrap_new_user();
+  bootstrap_pie();
 
   // redirect back to the base url
   header('Location: ' . $user_url);
