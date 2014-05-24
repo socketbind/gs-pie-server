@@ -19,11 +19,23 @@ $client->setAccessToken(get_credentials($_SESSION['userid']));
 $mirror_service = new Google_MirrorService($client);
 
 $timeline_item = new Google_TimelineItem();
-$timeline_item->setText("Apple Pie !");
+$timeline_item->setText("Apple Pie");
+
+
+$openItem = new Google_MenuItem();
+$openItem->setAction("OPEN_URI");
+$openItem->setPayload("org.glasshack.pie://open/1");
+
+$openValues = new Google_MenuValue();
+$openValues->setDisplayName("Open");
+$openValues->setState("DEFAULT");
+
+$openItem->setValues(array($openValues));
 
 $deleteMenuItem = new Google_MenuItem();
 $deleteMenuItem->setAction("DELETE");
-$timeline_item->setMenuItems(array($deleteMenuItem));
+
+$timeline_item->setMenuItems(array($openItem, $deleteMenuItem));
 
 insert_timeline_item($mirror_service, $timeline_item, "image/jpeg", file_get_contents('./static/images/pie.jpg'));
 
