@@ -7,7 +7,12 @@
 <body>
 
 <h1>Pie!</h1>
-<a href="/mirror/perform_auth.php">Perform auth</a>
+
+<?php if (!isset($_SESSION['userid'])): ?>
+    <a href="/mirror/perform_auth.php">Login</a>
+<?php else: ?>
+    <a href="/mirror/perform_logout.php">Log out</a>
+<?php endif; ?>
 
 </body>
 </html>
