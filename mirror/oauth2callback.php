@@ -46,14 +46,14 @@ if (isset($_GET['code'])) {
 
   // Bootstrap the new user by inserting a welcome message, a contact,
   // and subscribing them to timeline notifications
-  bootstrap_new_user();
+  //bootstrap_new_user();
 
   // redirect back to the base url
-  header('Location: ' . $base_url);
+  header('Location: ' . $user_url);
 } elseif (!isset($_SESSION['userid']) || get_credentials($_SESSION['userid']) == null) {
   // Handle step 1 of the OAuth 2.0 dance - redirect to Google
   header('Location: ' . $client->createAuthUrl());
 } else {
   // We're authenticated, redirect back to base_url
-  header('Location: ' . $base_url);
+  header('Location: ' . $user_url);
 }
