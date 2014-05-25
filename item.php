@@ -5,6 +5,10 @@ $id = $_GET['id'];
 $jsondata = file_get_contents('http://takkerapp.com:3000/recipe/' . $id);
 $obj = json_decode($jsondata);
 
+function cimg($img,$params){
+	return "http://res.cloudinary.com/pieapp/image/upload/".$params."/v".$img->version."/".$img->public_id;
+}
+
 ?>
 
 <html>
@@ -50,7 +54,7 @@ $obj = json_decode($jsondata);
 												if($i == -1)
 												{
 													?>
-													<img src="<?php echo $obj->{'image'}->{'url'}; ?>" title="<?php echo $obj->{'image'}->{'url'}; ?>" />
+													<img src="<?php echo echo cimg($obj[$i]->{'image'},'w_350,h_350,c_fill'); ?>" title="<?php echo $obj->{'image'}->{'url'}; ?>" />
 													
 													<div class="SliderNameDescription" style="padding: 10px;">
 													<?php
