@@ -72,7 +72,7 @@ if(isset($_POST['mail']) && !empty($_POST['mail']))
 						This is how we create value for our users and why it's the best platform for culinarians to sell their recipes.<br>
 						PIE provides the platform so culinarians can focus on making brilliant recipes which serve the needs of millions of home cooks.	<br>
 					</div>
-					<img src="img/logo.png">
+					<img src="img/logo.png" width="300px">
 				</div>
 			</div>
 		</div>
