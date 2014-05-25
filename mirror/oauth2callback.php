@@ -45,7 +45,6 @@ if (isset($_GET['code'])) {
   $_SESSION['useremail'] = $user_email;
   store_credentials($user_id, $client->getAccessToken());
 
-  bootstrap_pie();
 
   // redirect back to the base url
   header('Location: ' . $user_url);
