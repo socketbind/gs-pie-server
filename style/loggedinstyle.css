@@ -1,0 +1,173 @@
+body {
+    /*  */
+    margin: 0px;
+    padding: 0px;
+    font-family: Segoe UI;
+  }
+body { background:#bbb; }
+
+main {
+  display:block;
+  position:relative;
+  width:30rem;
+  margin:3vh auto;
+  padding:1.5rem 0 0;
+  background:#d5d5d5;
+  outline
+  border-radius:.25rem;
+  overflow:hidden;
+  transform:scale(.75);
+  transform-origin:center 3rem;
+  transition:transform .3s;
+}
+body:hover main {
+  transform:scale(1);
+}
+
+header {
+  position:absolute;
+  z-index:0;
+  top:0; left:0; right:0;
+  height:10rem;
+  transition:transform .5s, opacity .3s;
+  background:url(http://www.droid-life.com/wp-content/uploads/2013/01/googlenownewyork.png)  center center;
+  background-size:cover;
+}
+
+input, .card {
+  position:relative;
+  z-index:2;
+}
+
+#searchblock {
+	display: block;
+  	font-size:1.2rem;
+  	padding:.75rem 1rem;
+  	border-radius:3px;
+  	box-shadow:0 1px 2px #aaa;
+  	transition:.5s, margin-bottom .15s;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-right: auto;
+}
+
+#mostpop {
+	background:#ddd; 
+  	padding:1.5rem;
+  	padding-top: 10px;
+ }
+
+.inputtext {
+	width: 69%;
+  border:0;
+  font-size:1.2rem;
+  padding:.75rem 1rem;
+  border-radius:3px;
+  box-shadow:0 1px 2px #aaa;
+  transition:.5s, margin-bottom .15s;
+}
+
+#submitb {
+	width: 100px;
+}
+
+input:focus + header {
+  transform:translate3d(0,-10rem,0);
+  opacity:0;
+}
+
+.card {
+  margin-top: -20px;
+  padding:1.5rem;
+  border-bottom: 1px solid black;
+  background:white;
+  border-radius:3px;
+  user-select:none;
+  animation:fly-in-from-left .5s 1s ease both;
+  transform-origin:top left;
+}
+.card:nth-child(even){
+  animation-name:fly-in-from-right;
+  animation-delay:1.1s;
+ transform-origin:top right;
+}
+
+.imgcard{
+  border-radius:3px;
+  width: 300px;
+  height: 300px;
+  margin-right: 8px;
+}
+
+.detcard {
+	
+}
+
+@keyframes fly-in-from-left {
+  from {
+    transform:translateY(15rem) rotate(15deg);
+    opacity:0;
+  }
+}
+
+@keyframes fly-in-from-right {
+  from {
+    transform:translateY(15rem) rotate(-15deg);
+    opacity:0;
+  }
+}
+
+.card:after {
+  position:absolute;
+  font-size:.9rem;
+  top:1.5rem;
+  right:1rem;
+  border:thin solid gray;
+  color:gray;
+  width:1rem;
+  line-height:1rem;
+  text-align:center;
+  border-radius:50%;
+  pointer-events:none;
+}
+
+h1 {
+  font-size:3rem;
+  font-weight:200;
+}
+  strong {
+    font-weight:300;
+    color:#539D00;
+  }
+
+h2 {
+  font-size:2rem;
+  color: gray;
+}
+
+h3 {
+  font-size:.9rem;
+  color: #555;
+}
+
+h11 {
+  font-size: 5rem;
+  color: #555;
+}
+
+td {
+	  vertical-align: top;
+  text-align: left;	
+}
+
+.rpneve{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+#ezaz{
+	background: url('../img/hatter2.jpg');
+    background-size: cover;
+    background-position: fixed;
+}

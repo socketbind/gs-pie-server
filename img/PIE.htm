@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:8080/pie/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<link rel="stylesheet" type="text/css" href="./PIE_files/stylesheet.css">		
+		<script src="./PIE_files/jquery.js"></script>
+		<script src="./PIE_files/smoothie.js"></script>
+		<script type="text/javascript">
+			$( window ).scroll(function() {
+			 	var rect = document.getElementById('after').getBoundingClientRect();
+			 	if(rect.top < 50){$( "#navbar" ).css( "display", "block" ).fadeIn( "slow" );}
+			 	else{$( "#navbar" ).css( "display", "none" ).fadeOut( "slow" );}
+			});
+		
+		</script>
+		
+		<title>PIE</title>
+	</head>
+	<body>
+		<div id="starter">
+			<div id="topmenu">
+				<img src="./PIE_files/logo.png" class="box"><br>
+				<div id="menubox">
+					<a href="http://localhost:8080/pie/#what" class="smoothie" data-smoothie-speed="2000">ABOUT</a><br>
+					<a href="http://localhost:8080/pie/loggedin.php" class="smoothie" data-smoothie-speed="2000">LOG IN</a><br>
+					<img class="menukep" src="./PIE_files/icofb.png">
+					<img class="menukep" src="./PIE_files/icoinsta.png">
+					<img class="menukep" src="./PIE_files/icotwitta.png">
+				</div>
+				<img src="./PIE_files/glass.png" class="box">
+			</div>
+			<div style="float: right; margin-top: -500px; padding-right: 325px;">
+				<img src="./PIE_files/szlogen.png" class="sl">
+				<div style="margin-top: -90px; margin-left: 0px; width: 100%">
+					<input type="email" placeholder="E-mail address" class="inp"><img src="./PIE_files/subscribe.png">	
+				</div>
+				
+			</div>
+		</div>
+		<div id="after">
+			<div id="navbar" style="display: none;">
+				<p id="navbartxt">
+					<a href="http://localhost:8080/pie/#what" class="topmenuitem smoothie" data-smoothie-speed="2000">ABOUT</a>
+					<a href="http://localhost:8080/pie/loggedin.php" class="topmenuitem smoothie" data-smoothie-speed="2000">LOG IN</a>
+				</p>
+			</div>
+			<div id="wrap">
+				<div id="what">
+					<p class="whatname">Mi az a PIE?</p>
+					<div id="whatCont">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare magna a lacus fermentum, non blandit ipsum ornare. Sed et commodo lectus. Vestibulum tempus leo a est ornare, pretium pharetra mi fringilla. In feugiat libero risus, eu hendrerit purus consectetur non. Pellentesque sagittis hendrerit elit, vel dignissim risus laoreet a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis ligula ante, auctor sit amet aliquam in, feugiat eget lorem. Nam nibh lectus, cursus et leo quis, sagittis ultricies nisl. Proin vel eros mollis, adipiscing sem at, commodo ligula. Integer non turpis elit. Donec ultrices odio tortor, ut faucibus tellus porttitor luctus. Ut interdum nibh quis mauris accumsan convallis. Donec rhoncus purus eget justo auctor adipiscing.
+					</div>
+					<img src="./PIE_files/stopfood.png">
+				</div>
+			</div>
+		</div>
+	
+
+
+</body></html>
