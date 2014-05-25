@@ -124,7 +124,11 @@ $obj = json_decode($jsondata);
 				</td>
 					<td style=" text-align: justify;">
 						<div class="detcard">
-							<h1><p class="rpneve"><?php echo $obj->{'name'}; ?></p> <button><a style="text-decoration: none;" href="mirror/send_pie.php?id=<?php echo $obj->{'_id'}; ?>&name=<?php echo $obj->{'name'};?>&url=<?php echo $obj->{'image'}->{'url'}; ?>">asd</a></button></h1>
+							<h1><p class="rpneve"><?php echo $obj->{'name'}; ?></p> 
+								<div style="float: right; margin-top: -80px;">
+									<button style="padding: 5px 8px;"><a style="text-decoration: none;" href="mirror/send_pie.php?id=<?php echo $obj->{'_id'}; ?>&name=<?php echo $obj->{'name'};?>&url=<?php echo $obj->{'image'}->{'url'}; ?>">Push to Glass</a></button>
+									<button style="padding: 5px 8px;">Add to shopping list</button>
+								</div>
 							<h3>Description:</h3>
 							<?php print($obj->{'description'}); ?>
 							<h3>Ingredients:</h3>
