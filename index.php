@@ -51,7 +51,7 @@ if(isset($_POST['mail']) && !empty($_POST['mail']))
 					</div>
 					<input type="image" src="img/subscribe.png" name="submit" class="kp" width="300"/>
 				</form>
-				<iframe style="width: 640px; margin-left: 37%;" width="640" height="360" src="//www.youtube.com/embed/Kdgt1ZHkvnM?rel=0" frameborder="0" allowfullscreen></iframe>
+				<iframe style="width: 640px; margin-left: 37%;" width="640" height="360" src="http://www.youtube.com/watch?v=P6b5j0hBrFI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 		<div id="after">
