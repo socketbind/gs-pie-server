@@ -24,7 +24,7 @@ $timeline_item->setText("Apple Pie");
 
 $openItem = new Google_MenuItem();
 $openItem->setAction("OPEN_URI");
-$openItem->setPayload("org.glasshack.pie://open/1");
+$openItem->setPayload("org.glasshack.pie://5380bfeff067fc8d3b6ca130");
 
 $openValues = new Google_MenuValue();
 $openValues->setDisplayName("Open");
