@@ -24,7 +24,7 @@ $timeline_item->setText($_GET['name']); //ez
 
 $openItem = new Google_MenuItem();
 $openItem->setAction("OPEN_URI");
-$openItem->setPayload("org.glasshack.pie://".$_GET['id']); //utolso
+$openItem->setPayload("org.glasshack.pie://open/".$_GET['id']); //utolso
 
 $openValues = new Google_MenuValue();
 $openValues->setDisplayName("Open");
