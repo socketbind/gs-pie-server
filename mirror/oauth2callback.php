@@ -1,4 +1,5 @@
 <?php
+session_start();
 /*
 * Copyright (C) 2013 Google Inc.
 *
@@ -53,5 +54,5 @@ if (isset($_GET['code'])) {
   header('Location: ' . $client->createAuthUrl());
 } else {
   // We're authenticated, redirect back to base_url
-  header('Location: ' . $user_url);
+  header('Location: ' . $user_url.'/loggedin.php');
 }

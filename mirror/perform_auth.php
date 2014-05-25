@@ -13,5 +13,5 @@ if (!isset($_SESSION['userid']) || get_credentials($_SESSION['userid']) == null)
 } else {
     verify_credentials(get_credentials($_SESSION['userid']));
     $client->setAccessToken(get_credentials($_SESSION['userid']));
-    header('Location: ' . $user_url.'/loggedin.php');
+    header('Location: ' . 'loggedin.php');
 }
