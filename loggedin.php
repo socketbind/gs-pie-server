@@ -40,7 +40,7 @@ function cimg($img,$params){
 						<img class="imgcard" src="<?php echo cimg($obj[$i]->{'image'},'w_350,h_350,c_fill')?>">
 					</td>
 						<td>
-							<a href="item.php?id=<?php echo $obj[$i]->{'_id'}; ?>">
+							<a style="text-decoration:none; color: black;" href="item.php?id=<?php echo $obj[$i]->{'_id'}; ?>">
 								<div class="detcard">
 									
 									<p class="rpneve"><?php echo $obj[$i]->{'name'}; ?></p>
