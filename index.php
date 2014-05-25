@@ -63,7 +63,7 @@ if(isset($_POST['mail']) && !empty($_POST['mail']))
 			</div>
 			<div id="wrap">
 				<div id="what">
-					<p class="whatname">Mi az a PIE?</p>
+					<p class="whatname">What is the PIE?</p>
 					<div id="whatCont">
 						At PIE we think about cooking as a process which starts with the demand of cooking some food and ends up with having a delicious meal with your loved ones.<br>
 						The essential of cooking is the recipe. With a good recipe anyone can make delicious food without strong kitchen experiences.<br>
