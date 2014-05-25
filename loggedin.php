@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+function cimg($img,$params){
+	return "http://res.cloudinary.com/pieapp/image/upload/"+$params+"/v"+$img->version+"/"+$img->public_id
+}
+
 ?>
 <html>
 	<head>
@@ -32,13 +37,13 @@ session_start();
 					<td><h1>
 					</h1></td>
 					<td>
-						<img class="imgcard" src="<?php echo $obj[$i]->{'image'}->{'url'}?>">
+						<img class="imgcard" src="<?php echo cimg($obj[$i]->{'image'},'w_350,h_350,c_fill')?>">
 					</td>
 						<td>
-							<a style="text-decoration: none;" href="item.php?id=<?php echo $obj[$i]->{'_id'}; ?>">
+							<a href="item.php?id=<?php echo $obj[$i]->{'_id'}; ?>">
 								<div class="detcard">
 									
-									<p class="rpneve" style="color: black;"><?php echo $obj[$i]->{'name'}; ?></p>
+									<p class="rpneve"><?php echo $obj[$i]->{'name'}; ?></p>
 									<h3><?php echo $obj[$i]->{'description'};  ?></h3>
 								</div>
 							</a>
