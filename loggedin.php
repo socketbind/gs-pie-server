@@ -2,7 +2,7 @@
 session_start();
 
 function cimg($img,$params){
-	return "http://res.cloudinary.com/pieapp/image/upload/"+$params+"/v"+$img->version+"/"+$img->public_id
+	return "http://res.cloudinary.com/pieapp/image/upload/"+$params+"/v"+$img->version+"/"+$img->public_id;
 }
 
 ?>
