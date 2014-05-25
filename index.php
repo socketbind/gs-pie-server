@@ -65,9 +65,14 @@ if(isset($_POST['mail']) && !empty($_POST['mail']))
 				<div id="what">
 					<p class="whatname">Mi az a PIE?</p>
 					<div id="whatCont">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ornare magna a lacus fermentum, non blandit ipsum ornare. Sed et commodo lectus. Vestibulum tempus leo a est ornare, pretium pharetra mi fringilla. In feugiat libero risus, eu hendrerit purus consectetur non. Pellentesque sagittis hendrerit elit, vel dignissim risus laoreet a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis ligula ante, auctor sit amet aliquam in, feugiat eget lorem. Nam nibh lectus, cursus et leo quis, sagittis ultricies nisl. Proin vel eros mollis, adipiscing sem at, commodo ligula. Integer non turpis elit. Donec ultrices odio tortor, ut faucibus tellus porttitor luctus. Ut interdum nibh quis mauris accumsan convallis. Donec rhoncus purus eget justo auctor adipiscing.
+						At PIE we think about cooking as a process which starts with the demand of cooking some food and ends up with having a delicious meal with your loved ones.<br>
+						The essential of cooking is the recipe. With a good recipe anyone can make delicious food without strong kitchen experiences.<br>
+						So at PIE we have created a new format for recipes which serves the best structure for cooking at home. People will think about PIE as the platform to make their recipe searches.<br>
+						PIE covers every phases of cooking, so users stay on our platform from planning their meals until sharing pictures of the well-done food.<br >
+						This is how we create value for our users and why it's the best platform for culinarians to sell their recipes.<br>
+						PIE provides the platform so culinarians can focus on making brilliant recipes which serve the needs of millions of home cooks.	<br>
 					</div>
-					<img src="images/stopfood.png">
+					<img src="img/logo.png">
 				</div>
 			</div>
 		</div>
