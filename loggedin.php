@@ -32,7 +32,7 @@
 						<img class="imgcard" src="<?php echo $obj[$i]->{'image'}->{'url'}?>">
 					</td>
 						<td>
-							<a href="<?php echo $obj[$i]->{'_id'}; ?>">
+							<a href="item.php?id=<?php echo $obj[$i]->{'_id'}; ?>">
 								<div class="detcard">
 									
 									<p class="rpneve"><?php echo $obj[$i]->{'name'}; ?></p>

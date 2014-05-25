@@ -36,7 +36,7 @@ if(isset($_POST['mail']) && !empty($_POST['mail']))
 				<img src="img/logo.png" class="box"><br>
 				<div id="menubox">
 					<a href="#what" class="smoothie" data-smoothie-speed="2000">ABOUT</a><br>
-					<a href="loggedin.php" class="" data-smoothie-speed="2000">LOG IN</a><br>
+					<a href="mirror/perform_auth.php" class="" data-smoothie-speed="2000">LOG IN</a><br>
 					<img class="menukep" src="img/icofb.png"></img>
 					<img class="menukep" src="img/icoinsta.png"></img>
 					<img class="menukep" src="img/icotwitta.png"></img>
@@ -58,7 +58,7 @@ if(isset($_POST['mail']) && !empty($_POST['mail']))
 			<div id="navbar" style="display: none;">
 				<p id="navbartxt">
 					<a href="#what" class="topmenuitem smoothie" data-smoothie-speed="2000">ABOUT</a>
-					<a href="loggedin.php" class="topmenuitem" data-smoothie-speed="2000">LOG IN</a>
+					<a href="mirror/perform_auth.php" class="topmenuitem" data-smoothie-speed="2000">LOG IN</a>
 				</p>
 			</div>
 			<div id="wrap">
